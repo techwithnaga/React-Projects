@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap');
+
+
+*{
+  font-size: 20px;
+}
+body {
+  margin: 0;
+  background-color: #f7f5f5;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+h1 {
+  font-size: 3.5rem;
+}
+h2{
+  font-size: 2rem;
+}
+p{
+  font-size: 1.6rem;
+}
+
+
+.loading {
+  margin: 100px 0;
+}
+
+.container {
+  text-align:  center;
+  display: 90%;
+}
+.underline {
+  width: 6rem;
+  height: 0.4rem;
+  background: #FFD700;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.tour-list{
+  width:  100%;
+
+}
+
+.tour{
+  width: 60%;
+  border: 2px solid #D2AC47;
+  border-radius: 10px;
+  margin : 2em auto 3em auto;
+}
+
+@media (max-width:1500px){
+  .tour {
+    width: 95%;
+  }
+}
+
+img {
+  width : 100%;
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+}
+.tour-title{
+  display: flex;
+  justify-content: space-between;
+}
+
+.tour-body{
+  padding : 1.5em;
+  background-color: #3A3B3C;
+  color: white;
+}
+
+.cancel-btn{
+  padding : 1.2em;
+  font-size: 1.5rem;
+  border-radius: 0.5em;
+  border: 3px solid red;
+  color:red;
+  font-weight: bold;
+}
+
+.cancel-btn:hover {
+  cursor: pointer;
+  background-color: red;
+  color: white;
+}
+
+.refresh-btn {
+    padding : 1.2em;
+    font-size: 1.5rem;
+    border-radius: 0.5em;
+    border: 3px solid goldenrod;
+    color: goldenrod;
+    font-weight: bold;
+    margin: 5em auto auto auto;
+}
+
+.refresh-btn:hover {
+  cursor: pointer;
+  background-color: goldenrod;
+  color: white;
+}
+
