@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Over+the+Rainbow&family=Quicksand:wght@300&display=swap');
+*{
+  margin: 0;
+  font-family: 'Quicksand',sans-serif;
+  font-size: 19px;
+}
+
+h1{
+  font-size: 2rem;
+}
+
+.nav-center{
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+ul{
+  padding: 0;
+  margin: 1.8em;
+}
+
+li{
+  list-style: none;
+  padding: 1em;
+  display: inline;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+}
+
+a:hover {
+  color: rgb(51, 130, 148);
+}
+
+.logo {
+  padding:0.1em;
+  font-family: 'Over the Rainbow',cursive;
+}
+
+.nav-tite{
+  display: flex;
+  
+}
+
+.bars{
+  display: none;
+}
+
+@media (max-width: 900px){
+  .nav-center {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .nav-tilte{
+    width: 100%;
+    display: flex;
+    order: 1;
+  }
+
+  .list1, .list2{
+    height: 0;
+    overflow: hidden;
+    transition: all 0.5s linear;
+  }
+
+  .show-list{
+    height: 10em;
+  }
+
+  .list1{
+    order: 2;
+    margin: 0;
+  }
+
+  .list2{
+    margin: 0;
+    order: 3;
+  }
+
+
+  
+  li a:hover{
+    padding-left: 0.75em;
+    color: hsl(210, 22%, 49%);
+  }
+  .bars {
+    display: block;
+    margin-top: 1em;
+  }
+
+  .bars:hover{
+    cursor: pointer;
+    color: rgb(51, 130, 148);
+  }
+  ul{
+    width: 100%;
+
+  }
+  
+  li{
+    display: block;
+    border-bottom: 1px solid rgb(136, 136, 136);
+  }
+
+  .nav-tilte .logo{
+    margin: 0 auto;
+  }
+
+  ul{
+  }
+}
